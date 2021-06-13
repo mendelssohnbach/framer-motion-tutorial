@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -19,7 +19,7 @@ const modal = {
   },
 };
 
-const Modal = ({ showModal, setShowModal }) => {
+const Modal = ({ showModal }) => {
   return (
     <AnimatePresence exitBeforeEnter>
       {showModal && (
